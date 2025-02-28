@@ -14,7 +14,7 @@
   </head>
   <body class="bg-slate-200">
     <!-- container -->
-    <div class="container m-2 max-w-[1500px] min-h-screen mx-auto">
+    <div class="container m-2 max-w-[1500px] min-h-screen mx-auto space-y-5">
       <head>
         <nav class="flex justify-between items-center p-4 bg-white rounded-xl">
           <!-- logo part -->
@@ -27,13 +27,18 @@
 
           <!-- button part -->
           <div class="flex items-center gap-x-12">
+            <!-- button 1 -->
             <button
               class="text-3xl flex gap-3 items-center rounded-[30px] font-bold py-3 px-5 bg-sky-100 w-28"
               id="nav-state"
             >
               <img class="object-contain" src="assets/checkbox.png" alt="" /> 23
             </button>
-            <button class="p-2 rounded-xl bg-sky-100" id="theme-btn">
+            <!-- button 2 -->
+            <button
+              class="p-2 rounded-xl bg-sky-100 cursor-pointer"
+              id="theme-btn"
+            >
               <img src="assets/theme-btn.png" alt="" />
             </button>
           </div>
@@ -41,7 +46,47 @@
       </head>
 
       <!-- main section -->
-      <main></main>
+      <main class="min-h-screen grid grid-cols-4 gap-5">
+        <!-- left content -->
+        <section class="col-span-3 rounded-xl bg-white">
+          <!-- top section  -->
+          <section
+            class="grid grid-cols-4 gap-5 p-4 border-b-2 border-gray-300 border-dashed"
+          >
+            <div
+              class="col-span-1 flex justify-center items-center gap-4 py-4 bg-blue-50 rounded-xl"
+            >
+              <img class="object-scale-down" src="assets/checkbox.png" alt="" />
+              <div>
+                <p class="text-gray-500 font-medium">Task Assigned</p>
+                <h4 id="state-2" class="text-3xl text-textColor font-bold">
+                  05
+                </h4>
+              </div>
+            </div>
+
+            <div
+              class="col-span-2 flex items-center justify-center gap-4 rounded-xl py-4 bg-gradient-to-r from-bgColor to-blue-400"
+            >
+              <img src="assets/board.png" alt="" />
+              <h1 class="font-medium text-2xl text-slate-100">
+                Discover Something New Today!
+              </h1>
+            </div>
+
+            <div
+              class="col-span-1 flex justify-center items-center gap-4 py-4 bg-blue-50 rounded-xl"
+            >
+              <img class="object-scale-down" src="assets/calender.png" alt="" />
+              <h4 class="text-xl font-bold">Wed, Feb 12 2025</h4>
+            </div>
+          </section>
+          <!-- bottom section -->
+          <section></section>
+        </section>
+        <!-- aside section -->
+        <aside class="col-span-1 rounded-xl bg-white"></aside>
+      </main>
     </div>
   </body>
 </html>
