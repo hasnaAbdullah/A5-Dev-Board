@@ -82,7 +82,7 @@
               <h4 class="text-xl font-semibold">Wed, Feb 12 2025</h4>
             </div>
           </section>
-          <!-- bottom section -->
+          <!-- all carts container -->
           <section class="grid grid-cols-3 gap-5 p-4">
             <!-- cart 1 -->
             <div class="p-6 bg-blue-50 space-y-4 rounded-lg">
@@ -249,7 +249,35 @@
           </section>
         </section>
         <!-- aside section -->
-        <aside class="col-span-1 rounded-xl bg-white"></aside>
+        <aside class="col-span-1 rounded-xl bg-white space-y-6">
+          <!-- history nav -->
+          <div
+            class="text-center space-y-4 border-b-2 border-dashed border-gray-300 py-4"
+          >
+            <div class="flex items-center justify-center gap-4">
+              <img class="object-scale-down" src="assets/activity.png" alt="" />
+              <p class="font-medium text-lg text-textColor">Activity log</p>
+            </div>
+            <button
+              id="clear-history"
+              class="bg-bgColor rounded-lg py-2 px-5 font-semibold text-white text-lg cursor-pointer"
+            >
+              Clear History
+            </button>
+          </div>
+
+          <!-- all history item -->
+          <div class="items p-6 space-y-5">
+            <p class="item bg-blue-50 p-3 text-gray-600 rounded-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+              voluptatem non provident blanditiis, dolorum nulla?
+            </p>
+            <p class="item bg-blue-50 p-3 text-gray-600 rounded-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+              voluptatem non provident blanditiis, dolorum nulla?
+            </p>
+          </div>
+        </aside>
       </main>
     </div>
   </body>
