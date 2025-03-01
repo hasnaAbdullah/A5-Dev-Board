@@ -64,3 +64,10 @@ function addedHistory(currentButton) {
  `;
   historyContainer.appendChild(newHistoryElm);
 }
+
+// clearing history
+const historyBtn = document.getElementById("clear-history");
+historyBtn.addEventListener("click", function () {
+  const historyContainer = document.getElementById("history-container");
+  historyContainer.innerHTML = "";
+});
