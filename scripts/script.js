@@ -71,3 +71,40 @@ historyBtn.addEventListener("click", function () {
   const historyContainer = document.getElementById("history-container");
   historyContainer.innerHTML = "";
 });
+
+// displaying today's date
+const dateTitle = document.getElementById("today's-date");
+const date = new Date();
+const currentDate = date.toDateString();
+dateTitle.innerText = currentDate;
+
+// changing background color
+const themeButton = document.getElementById("theme-btn");
+themeButton.addEventListener("click", function () {
+  const body = document.getElementById("body");
+  const hexCharacters = [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+  ];
+  const charsLength = hexCharacters.length;
+  let hexColor = "#";
+  for (let i = 0; i < 6; i++) {
+    let randomPosition = Math.floor(Math.random() * charsLength);
+    hexColor += hexCharacters[randomPosition];
+  }
+  body.style.backgroundColor = hexColor;
+});
