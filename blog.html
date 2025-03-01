@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Page</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind v4 cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
         --color-bgColor: #3752fd;
         --color-textColor: #00303c;
+        --font-Poppins: "Poppins", sans-serif;
       }
     </style>
   </head>
-  <body class="bg-slate-200">
+  <body class="bg-slate-200 font-Poppins">
     <div class="container m-2 max-w-[1500px] mx-auto space-y-5">
       <head>
         <nav
@@ -54,9 +63,14 @@
               </h3>
             </div>
             <p class="text-lg font-medium text-gray-400 p-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              deleniti nihil nisi asperiores tenetur ad amet, architecto
-              laboriosam sed magnam.
+              There are five different ways to select an element in the DOM.
+              <br />
+              Like --> <br />
+              1. using getElementById(). <br />
+              2. using getElementsByClassName() <br />
+              3. using getElementsByTagName() <br />
+              4. using querySelector() <br />
+              5. and Finally using querySelectorAll()
             </p>
           </section>
           <!-- question 2-->
@@ -68,11 +82,21 @@
               </h3>
             </div>
             <p class="text-lg font-medium text-gray-400 p-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              deleniti nihil nisi asperiores tenetur ad amet, architecto
-              laboriosam sed magnam Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Vitae commodi magni consequuntur, pariatur
-              itaque impedit consectetur at odio dicta quos!.
+              The difference among innerHTML, innerText and textContent is
+              <br />
+              <br />
+              1. innerHTML: <br />
+              innerHTML returns both HTML murkup and text content of an element.
+              <br />
+              <br />
+              2. innerText: <br />
+              innerText only returns text content of an element without html tag
+              and the text content is what we see on screen. <br />
+              <br />
+              3. textContent: <br />
+              textContent only returns text content of an element without html
+              tag but the text content is what is written in hard code. <br />
+              It means all disappear's content is also returned
             </p>
           </section>
           <!-- question 3-->
@@ -83,11 +107,9 @@
               </h3>
             </div>
             <p class="text-lg font-medium text-gray-400 p-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              deleniti nihil nisi asperiores tenetur ad amet, architecto
-              laboriosam sed magnam Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Vitae commodi magni consequuntur, pariatur
-              itaque impedit consectetur at odio dicta quos!.
+              Event delegation is the process to stop spreading the event
+              upwards from the targeted event <br />
+              and also stop spreading around the targeted event.
             </p>
           </section>
           <!-- question 4-->
@@ -98,11 +120,8 @@
               </h3>
             </div>
             <p class="text-lg font-medium text-gray-400 p-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              deleniti nihil nisi asperiores tenetur ad amet, architecto
-              laboriosam sed magnam Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Vitae commodi magni consequuntur, pariatur
-              itaque impedit consectetur at odio dicta quos!.
+              Event bubbling is the process of spreading the event upwards from
+              the targeted event.
             </p>
           </section>
           <!-- question 5-->
@@ -114,11 +133,13 @@
               </h3>
             </div>
             <p class="text-lg font-medium text-gray-400 p-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              deleniti nihil nisi asperiores tenetur ad amet, architecto
-              laboriosam sed magnam Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Vitae commodi magni consequuntur, pariatur
-              itaque impedit consectetur at odio dicta quos!.
+              1. using document.createElement(), we can create any kinds of html
+              element. <br /><br />
+              2. using append, appendChild and so on methods, we can add any
+              kinds of html element inside or outside in others element.
+              <br /><br />
+              3. using removeChild method, we can delete any kinds of html
+              element.
             </p>
           </section>
         </section>
