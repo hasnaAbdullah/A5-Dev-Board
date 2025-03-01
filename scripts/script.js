@@ -108,3 +108,9 @@ themeButton.addEventListener("click", function () {
   }
   body.style.backgroundColor = hexColor;
 });
+
+// traversing blog page
+const traversing = document.getElementById("traversing-blogPage");
+traversing.addEventListener("click", function () {
+  window.location.href = "blog.html";
+});

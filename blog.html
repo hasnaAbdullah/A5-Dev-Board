@@ -4,13 +4,130 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Page</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-bgColor: #3752fd;
+        --color-textColor: #00303c;
+      }
+    </style>
   </head>
-  <body>
-    <h1>this is blog page</h1>
-    <button id="home-page">back to home page</button>
+  <body class="bg-slate-200">
+    <div class="container m-2 max-w-[1500px] mx-auto space-y-5">
+      <head>
+        <nav
+          class="flex justify-between items-center p-4 shadow-sm bg-white rounded-xl"
+        >
+          <!-- logo part -->
+          <div class="flex items-center space-x-1">
+            <img src="assets/logo.png" alt="" />
+            <h3 class="text-textColor text-4xl">
+              Dev<span class="font-bold">Board</span>
+            </h3>
+          </div>
+
+          <!-- button part -->
+          <div class="flex items-center gap-x-12">
+            <!-- button  -->
+            <button
+              id="back-homePage"
+              class="bg-bgColor rounded-lg py-2 px-5 font-semibold text-white text-lg cursor-pointer transition hover:bg-blue-800 active:scale-95 completed-btn"
+            >
+              Back to Desk
+            </button>
+          </div>
+        </nav>
+      </head>
+
+      <main>
+        <h1 class="text-center text-4xl font-bold text-textColor mb-6">
+          Blogs
+        </h1>
+        <!-- question section  -->
+        <section class="space-y-5">
+          <!-- question 1 -->
+          <section class="bg-white rounded-md">
+            <div class="border-b border-dashed border-gray-300">
+              <h3 class="text-2xl font-bold text-textColor p-5">
+                Question-1: What are the different ways to select an element in
+                the DOM?
+              </h3>
+            </div>
+            <p class="text-lg font-medium text-gray-400 p-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deleniti nihil nisi asperiores tenetur ad amet, architecto
+              laboriosam sed magnam.
+            </p>
+          </section>
+          <!-- question 2-->
+          <section class="bg-white rounded-md">
+            <div class="border-b border-dashed border-gray-300">
+              <h3 class="text-2xl font-bold text-textColor p-5">
+                Question-2: What is the difference between innerHTML, innerText,
+                and textContent ?
+              </h3>
+            </div>
+            <p class="text-lg font-medium text-gray-400 p-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deleniti nihil nisi asperiores tenetur ad amet, architecto
+              laboriosam sed magnam Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Vitae commodi magni consequuntur, pariatur
+              itaque impedit consectetur at odio dicta quos!.
+            </p>
+          </section>
+          <!-- question 3-->
+          <section class="bg-white rounded-md">
+            <div class="border-b border-dashed border-gray-300">
+              <h3 class="text-2xl font-bold text-textColor p-5">
+                Question-3: What is event delegation in the DOM?
+              </h3>
+            </div>
+            <p class="text-lg font-medium text-gray-400 p-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deleniti nihil nisi asperiores tenetur ad amet, architecto
+              laboriosam sed magnam Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Vitae commodi magni consequuntur, pariatur
+              itaque impedit consectetur at odio dicta quos!.
+            </p>
+          </section>
+          <!-- question 4-->
+          <section class="bg-white rounded-md">
+            <div class="border-b border-dashed border-gray-300">
+              <h3 class="text-2xl font-bold text-textColor p-5">
+                Question-4: What is event bubbling in the DOM?
+              </h3>
+            </div>
+            <p class="text-lg font-medium text-gray-400 p-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deleniti nihil nisi asperiores tenetur ad amet, architecto
+              laboriosam sed magnam Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Vitae commodi magni consequuntur, pariatur
+              itaque impedit consectetur at odio dicta quos!.
+            </p>
+          </section>
+          <!-- question 5-->
+          <section class="bg-white rounded-md">
+            <div class="border-b border-dashed border-gray-300">
+              <h3 class="text-2xl font-bold text-textColor p-5">
+                Question-5: How do you create, add, and remove elements using
+                JavaScript?
+              </h3>
+            </div>
+            <p class="text-lg font-medium text-gray-400 p-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deleniti nihil nisi asperiores tenetur ad amet, architecto
+              laboriosam sed magnam Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Vitae commodi magni consequuntur, pariatur
+              itaque impedit consectetur at odio dicta quos!.
+            </p>
+          </section>
+        </section>
+      </main>
+    </div>
 
     <script>
-      document.getElementById("home-page").addEventListener("click", () => {
+      const backHomePage = document.getElementById("back-homePage");
+      backHomePage.addEventListener("click", function () {
         window.location.href = "index.html";
       });
     </script>
